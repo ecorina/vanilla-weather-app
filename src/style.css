@@ -18,7 +18,6 @@ h1 {
 ul {
   margin: 0;
   padding: 0;
-  text-transform: capitalize;
 }
 li {
   list-style: none;
@@ -29,11 +28,14 @@ li {
   margin: 0;
   padding: 0;
 }
+li::first-letter {
+  text-transform: capitalize;
+}
 .precipitations {
   display: block;
   position: relative;
   top: 20px;
-  left: 30px;
+  left: 110px;
 }
 .emoji {
   font-size: 100px;
@@ -48,4 +50,12 @@ li {
   font-size: 15px;
   position: relative;
   top: -40px;
+}
+#update {
+  position: relative;
+  left: -30px;
+}
+#clarity {
+  position: relative;
+  left: -30px;
 }
