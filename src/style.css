@@ -13,8 +13,33 @@ h1 {
   font-size: 25px;
   font-weight: 100;
   line-height: 29px;
+  margin-bottom: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
 }
 li {
   list-style: none;
   color: rgb(135, 135, 135);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+.precipitations {
+  display: block;
+  position: relative;
+  top: 15px;
+  left: 30px;
+}
+.emoji {
+  font-size: 100px;
+}
+.temperature {
+  font-size: 40px;
+  font-weight: 600;
+  position: relative;
+  top: -30px;
 }
