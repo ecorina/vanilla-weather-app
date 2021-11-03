@@ -17,54 +17,56 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <form id="search-city" class="mb-3">
+      <div class="app-container">
+        <div class="weather-app">
+          <form id="search-city" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Enter City..."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-secondary w-100"
+                />
+              </div>
+            </div>
+          </form>
+
+          <h1 id="city-name"></h1>
+
+          <ul>
+            <li id="update">Last updated: <span id="date"></span></li>
+            <li id="clarity"></li>
+          </ul>
           <div class="row">
-            <div class="col-9">
-              <input
-                type="search"
-                placeholder="Enter City..."
-                class="form-control"
-                id="city-input"
-                autocomplete="off"
-              />
+            <div class="col-6">
+              <span class="temperatureClass"
+                ><span id="emoji"> <img src="" alt="" id="icon" /> </span
+                ><span id="temperature"></span
+                ><small class="units">
+                  <span
+                    ><a href="#" id="celsius-link" class="active">ºC </a>|</span
+                  >
+                  <span class="fahrenheit">
+                    <a href="#" id="fahrenheit-link"> ºF</a></span
+                  >
+                </small>
+              </span>
             </div>
-            <div class="col-3">
-              <input
-                type="submit"
-                value="Search"
-                class="btn btn-secondary w-100"
-              />
+            <div class="col-6">
+              <ul class="precipitations">
+                <li>Humidity:<span id="humidity"></span> %</li>
+                <li>Wind:<span id="wind"></span>km/h</li>
+              </ul>
             </div>
-          </div>
-        </form>
-
-        <h1 id="city-name"></h1>
-
-        <ul>
-          <li id="update">Last updated: <span id="date"></span></li>
-          <li id="clarity"></li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <span class="temperatureClass"
-              ><span id="emoji"> <img src="" alt="" id="icon" /> </span
-              ><span id="temperature"></span
-              ><small class="units">
-                <span
-                  ><a href="#" id="celsius-link" class="active">ºC </a>|</span
-                >
-                <span class="fahrenheit">
-                  <a href="#" id="fahrenheit-link"> ºF</a></span
-                >
-              </small>
-            </span>
-          </div>
-          <div class="col-6">
-            <ul class="precipitations">
-              <li>Humidity:<span id="humidity"></span> %</li>
-              <li>Wind:<span id="wind"></span>km/h</li>
-            </ul>
           </div>
         </div>
         <footer>
@@ -73,7 +75,7 @@
               href="https://github.com/ecorina/vanilla-weather-app"
               target="_blank"
             >
-              Code
+              Open-source code
             </a>
             by Corina ES
           </small>
