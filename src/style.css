@@ -40,7 +40,7 @@ li::first-letter {
 .emoji {
   font-size: 100px;
 }
-.temperature {
+.temperatureClass {
   font-size: 80px;
   font-weight: 600;
   position: relative;
@@ -50,6 +50,13 @@ li::first-letter {
   font-size: 15px;
   position: relative;
   top: -40px;
+}
+.active {
+  color: black;
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
 }
 #update {
   position: relative;
