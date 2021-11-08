@@ -68,3 +68,18 @@ li::first-letter {
   position: relative;
   left: -30px;
 }
+.weather-week-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.weather-week-date {
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+.weather-week-temperature {
+  font-size: 14px;
+}
+.weather-day-min {
+  opacity: 0.5;
+}
