@@ -2,13 +2,14 @@
   font-family: Arial, sans-serif;
 }
 .app-container {
-  max-width: 600px;
+  max-width: 650px;
   margin: 30px auto;
 }
 .weather-app {
   padding: 20px;
   border: 1px solid darkgray;
   border-radius: 10px;
+  background-color: #f9f7fd;
 }
 h1 {
   color: #878787;
@@ -82,4 +83,25 @@ li::first-letter {
 }
 .weather-day-min {
   opacity: 0.5;
+}
+
+#color-btn {
+  background: crimson;
+  color: #f9f7fd;
+}
+#date {
+  color: crimson;
+}
+#humidity {
+  color: crimson;
+}
+#percentage {
+  color: crimson;
+}
+
+#wind {
+  color: crimson;
+}
+#mph {
+  color: crimson;
 }
