@@ -1,9 +1,10 @@
-.body {
+body {
   font-family: Arial, sans-serif;
 }
 .app-container {
   max-width: 600px;
   margin: 30px auto;
+  padding: 0 15px;
 }
 .weather-app {
   padding: 20px;
@@ -36,9 +37,7 @@ li::first-letter {
 }
 .precipitations {
   display: block;
-  position: relative;
-  top: 20px;
-  left: 40px;
+  padding-top: 20px;
 }
 .emoji {
   font-size: 100px;
@@ -61,14 +60,6 @@ li::first-letter {
 .active:hover {
   text-decoration: none;
 }
-#update {
-  position: relative;
-  left: -30px;
-}
-#clarity {
-  position: relative;
-  left: -30px;
-}
 .weather-week-forecast {
   margin-top: 20px;
   text-align: center;
@@ -88,6 +79,7 @@ li::first-letter {
 #color-btn {
   background: crimson;
   color: #f9f7fd;
+  border-color: crimson;
 }
 #date {
   color: crimson;
@@ -104,4 +96,60 @@ li::first-letter {
 }
 #mph {
   color: crimson;
+}
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Small phones (up to 400px) */
+@media (max-width: 400px) {
+  .app-container {
+    margin: 10px auto;
+    padding: 0 8px;
+  }
+  .weather-app {
+    padding: 15px 12px;
+  }
+  h1 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .temperatureClass {
+    font-size: 48px;
+    top: 0;
+  }
+  .units {
+    top: -20px;
+  }
+  .precipitations {
+    padding-top: 10px;
+  }
+  li {
+    font-size: 14px;
+  }
+  .weather-week-date {
+    font-size: 14px;
+  }
+  .weather-week-temperature {
+    font-size: 12px;
+  }
+}
+
+/* Phones (401px to 576px) */
+@media (min-width: 401px) and (max-width: 576px) {
+  .app-container {
+    margin: 15px auto;
+  }
+  .temperatureClass {
+    font-size: 56px;
+    top: -10px;
+  }
+  .units {
+    top: -25px;
+  }
+  .precipitations {
+    padding-top: 10px;
+  }
 }
