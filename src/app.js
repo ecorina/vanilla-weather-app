@@ -43,7 +43,7 @@ function displayForecast(response) {
                     forecastDay.dt
                   )}</div>
   
-                  <img src="http://openweathermap.org/img/wn/${
+                  <img src="https://openweathermap.org/img/wn/${
                     forecastDay.weather[0].icon
                   }@2x.png" alt="" width="45" />
   
@@ -91,7 +91,7 @@ function displayTemperature(response) {
   let icon = document.querySelector("#icon");
   icon.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   icon.setAttribute("alt", response.data.weather[0].description);
 
